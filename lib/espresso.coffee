@@ -16,7 +16,7 @@ tpl =
       espresso = require('./espresso.coffee').core
 
       ### create express server ###
-      app = express.createServer()
+      app = express()
 
       ### parse args (- coffee and the filename) ###
       ARGV = process.argv[2..]
@@ -105,7 +105,7 @@ tpl =
         "preinstall": "npm install -g coffee-script"
       },
       "dependencies": {
-        "express": "2.5.11",
+        "express": "3.0.0rc1",
         "coffee-script": "1.3.3",
         "stylus": "*",
         "jade": "*",
@@ -116,8 +116,10 @@ tpl =
 
   jade:
     index: """
-      h1 #{title}
-      p Welcome to #{title}
+      exports layout
+      block content
+        h1 #{title}
+        p Welcome to #{title}
     """
     layout: """
       !!!
@@ -125,8 +127,9 @@ tpl =
         head
           title #{title}
           link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Berkshire+Swash&text=ExpresCofBilrplat')
-          link(rel='stylesheet', href='/css/styles.css')
-        body!= body
+          link(rel='stylesheet', href='css/styles.css')
+        body
+          block content
     """
   styles: """
     body

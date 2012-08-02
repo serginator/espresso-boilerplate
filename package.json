@@ -16,6 +16,10 @@
     "name": "Denis Ciccale",
     "email": "dciccale@gmail.com",
     "url": "http://webdecs.wordpress.com/"
+  }, {
+    "name": "Sergio Ruiz",
+    "email": "serginator@gmail.com",
+    "url": "http://www.serginator.com"
   }],
   "license": "MIT",
   "repository": "git://github.com/julien/espresso-boilerplate.git",
