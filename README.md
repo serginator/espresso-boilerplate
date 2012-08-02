@@ -26,6 +26,7 @@ Run Espresso with `coffee app.coffee -p` to minify the generated CoffeeScript
 ## Authors
 - [Julien Castelain](http://twitter.com/__juju__)
 - [Denis Ciccale](http://twitter.com/tdecs)
+- [Sergio Ruiz](http://twitter.com/serginator)
 
 ## License
 See [LICENSE.txt](https://raw.github.com/dciccale/espresso-boilerplate/master/LICENSE.txt)
